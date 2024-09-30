@@ -5,11 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Layout 1</title>
     <link rel="stylesheet" href="../style.css">
+    
     <style>
       body {
         display: grid;
+        grid-template-columns: (6, 1fr);
+        grid-template-rows: (4, 1fr);
+        gap: 10px;
       }
-      /* Doe hier jouw ding! */
+
+      header {
+        grid-column: 1 / 6;
+        grid-row: 1;
+      }
+
+      nav {
+        grid-column: 1;
+        grid-row: 2 / 4; 
+      }
+
+      main {
+        grid-column: 2 / 6;
+        grid-row: 2 / 4;
+      }
+
+      footer {
+        grid-column: 1 / 6;
+        grid-row: 4;
+      }
+
     </style>
   </head>
   <body id="basic-layout-1">
